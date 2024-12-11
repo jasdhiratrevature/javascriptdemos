@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document Object Model</title>
+    <script>
+        function changeHeading(){
+            alert("This Works !")
+            var myh2A=document.getElementById("myh2a");
+            myh2A.innerHTML="Text Changed !!!"
+            // your code here
+            document.getElementById("myh2b").innerHTML="Jasdhir"
+        }
+    </script>
+</head>
+<body>
+    <h2 id="myh2a">This is First Heading </h2>
+    <h2 id="myh2b">This is Second Heading</h2>
+    <button type="button" onclick="changeHeading()">Change Heading</button>
+</body>
+</html>

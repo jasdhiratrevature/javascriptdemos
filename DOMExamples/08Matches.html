@@ -1,0 +1,16 @@
+<p>The matches() method returns a Boolean value indicating whether an element is matched by a specific CSS selector or not.</p>
+<ul id="birds">
+    <li>Orange-winged parrot</li>
+    <li class="endangered">Philippine eagle</li>
+    <li class="endangered">Great white pelican</li>
+  </ul>
+  
+  <script type="text/javascript">
+    var birds = document.getElementsByTagName('li');
+  
+    for (var i = 0; i < birds.length; i++) {
+      if (birds[i].matches('.endangered')) {
+        console.log('The ' + birds[i].textContent + ' is endangered!');
+      }
+    }
+  </script>

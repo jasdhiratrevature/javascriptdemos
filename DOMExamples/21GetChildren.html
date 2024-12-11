@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Page</title>
+  <meta/>
+  <script></script>
+</head>
+
+<body>
+
+  <p>Click the button to get the tag names of the body element's children.</p>
+
+  <button onclick="myFunction()">Try it</button>
+<h1>ddd</h1>
+  <p id="demo"></p>
+
+  <script>
+    function myFunction() {
+      var c = document.documentElement.children; // <html>
+     // var c=document.head.children; // <head>
+      // var c = document.body.children; // <body>
+
+      var txt = "";
+      var i;
+      for (i = 0; i < c.length; i++) {
+        txt = txt + c[i].tagName + "<br>";
+      }
+
+      document.getElementById("demo").innerHTML = txt;
+    }
+  </script>
+
+</body>
+
+</html>

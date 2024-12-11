@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="./getdata.js"></script>
+    <title>Fetch Demo API</title>
+</head>
+<body onload="getData()">
+    <form>
+        <label>Enter Id : </label>
+        <input type="number" name="userId" id="userId"/><br/>
+        <label>Enter Name : </label>
+        <input type="text" name="username" id="username"/><br/>
+        <label>Enter Password</label>
+        <input type="password" name="pass" id="userpass"/><br/>
+        <br/>
+        <button onclick="submitData()">Save</button>
+    </form>
+    <hr/>
+  <div id="myData"></div>  
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>DOM Example 01</title>
+        <script>
+            function clickHandlerFirstH1(){
+                alert("This Works !!!!")
+            var firstHeading=document.getElementById("firstH1");
+            var text=firstHeading.innerText;
+            alert(text)
+            firstHeading.innerHTML="This is Changed ..... "
+            firstHeading.style.color="red";
+            }
+
+            function elementInsert(){
+                alert("Element Insert");
+                let newElement=document.createElement("div");
+                newElement.innerHTML="<p>Hello There....</p>";
+                let whereToInsert=document.getElementById("scecondH1");
+                whereToInsert.append(newElement)
+            }
+        </script>
+</head>
+<body>
+    <h1 id="firstH1" onclick="clickHandlerFirstH1()">This is First Example of DOM</h1>
+    <h1 id="scecondH1">This is Second Heading</h1>
+    <button onclick="elementInsert()">Click Me</button>
+</body>
+</html>

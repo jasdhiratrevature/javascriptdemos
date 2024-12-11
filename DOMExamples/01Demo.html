@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+function myFunction(){
+    var myElement = document.getElementById("intro");
+document.getElementById("demo").innerHTML = 
+"The text from the intro paragraph is " + myElement.innerHTML;
+}        
+    </script>
+</head>
+<body>
+    <p id="demo">This is a Paragraph</p>
+    <p id="intro">This is a Intro</p>
+    <button onclick="myFunction()">Click Me</button>
+
+</body>
+</html>
